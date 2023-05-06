@@ -5,7 +5,6 @@ RSpec.describe Cat, type: :model do
     cat = Cat.create(age:4, gender:'Female', enjoys:'Loves to knock over clear cups of water', image:'instaprofile.com')
     expect(cat.errors[:name]).to_not be_empty
   end
-  # Good Fail
 
   it "should validate age exists in the entry" do
     cat = Cat.create(name: 'Shadow', gender:'Male', enjoys:'eating mole', image:'epicpics.com')
